@@ -1,0 +1,51 @@
+{
+  "name": "dmp_recruitment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js --signal SIGTERM --delay 1000ms",
+    "kill": "kill -9 $(lsof -t -i:3000) &>/dev/null | exit 0",
+    "test": "nodemon app.js",
+    "start": "nodemon app"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "web",
+    "service"
+  ],
+  "author": "Ilham A",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "15.1.1",
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "big-number": "2.0.0",
+    "body-parser": "^1.20.1",
+    "cors": "2.8.5",
+    "crypto-js": "3.1.9-1",
+    "dotenv": "8.2.0",
+    "express": "^4.18.2",
+    "hashids": "2.0.1",
+    "helmet": "3.22.0",
+    "jsonwebtoken": "8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.3",
+    "moment-timezone": "0.5.27",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.7.5",
+    "passport": "^0.5.2",
+    "passport-google-oauth20": "^2.0.0",
+    "pdfmake": "0.1.61",
+    "saslprep": "1.0.3",
+    "socket.io": "^2.5.0",
+    "socket.io-redis": "^5.3.0",
+    "uniqid": "5.0.3",
+    "winston": "3.2.1",
+    "xhr2": "^0.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
